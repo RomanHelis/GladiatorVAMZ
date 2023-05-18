@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gladiatortutorial">
+
+    <TextView
+        android:id="@+id/tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/tutori_l"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="110dp"
+        android:text="@string/hru_za_nate_vytvoren_m_svojho_gladi_tora_po_vytvoren_gladi_tora_sa_budete_nach_dza_v_kas_r_ach_kde_budete_vidie_atrib_ty_va_ej_postavy_ako_aj_po_et_minc_stla_en_m_tla_idiel_sa_dostanete_do_a_ich_lok_ci_ako_obchod_s_brnen_m_a_zbra_ami_kde_si_za_mince_m_ete_nakupova_vybavenie_a_ia_lok_cia_sl_i_na_v_ber_s_pera_s_ktor_m_budete_bojova_na_v_ber_m_te_s_perov_s_tromi_obtia_nos_ami_ke_si_s_pera_vyberiete_ocitnete_sa_v_ar_ne_kde_uvid_te_va_e_aj_s_perov_atrib_ty_a_ukazovate_zdravia_tla_idlom_boj_odohr_vate_s_boj_ak_zomriete_za_nate_odznova_v_pr_pade_e_pre_ijete_dostanete_peniaze_a_sk_senosti_vyhr_te_ke_zdol_te_naj_a_ieho_oponenta"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tutorial" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

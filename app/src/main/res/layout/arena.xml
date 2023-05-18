@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constrainLayoutArena"
+    android:background="@drawable/arena3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gladiator1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/arena"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="300dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_postava_meno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meno_0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_postava_utok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/utok_0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_postava_obrana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obrana_0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_postava_zivoty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zivoty_0"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="352dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_super_meno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meno_1"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_super_utok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/utok_1"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_super_obrana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obrana_1"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_super_zivoty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zivoty_1"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/postava_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="460dp"
+        android:progressTint="#EA2828"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/super_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="460dp"
+        android:progressTint="#EA2828"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boj_button"
+        android:layout_width="414dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="556dp"
+        android:text="@string/boj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

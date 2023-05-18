@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zbrane">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:textColor="#0F9D58"
+            android:text="Gladiátor" />
+        <TextView
+            android:id="@+id/text_meno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Meno: 0" />
+
+        <TextView
+            android:id="@+id/text_peniaze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Peniaze: 0" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Zbrane:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_palica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palica: Pridáva +1 do atribútu útok. Cena 10 mincí."
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_sekera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekera: Pridáva +3 do atribútu útok. Cena 50 mincí."
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_meč"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meč: Pridáva +5 do atribútu útok. Cena 100 mincí."
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/zbrane_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="236dp"
+        android:checkedButton="@id/option_palica"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/option_palica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palica"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/option_sekera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekera"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/option_meč"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meč"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/kupit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/k_pi"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <Button
+            android:id="@+id/vyrobit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vyrobi"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <Button
+            android:id="@+id/vyzdvihni_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vyzdvihn_zbra"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nasp_do_kas_rn"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="430dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/character">
+
+    <TextView
+        android:id="@+id/nadpis"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Alokovanie bodov"
+        android:textSize="20sp"
+        android:textColor="#CD5050"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruktaz"
+        android:layout_width="410dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="76dp"
+        android:text="Vyberte si jeden z atribútov ktoré chcete navýšiť a stačte tlačidlo 'Potvrdiť'."
+        android:textColor="#CD5050"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/body_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="236dp"
+        android:checkedButton="@id/option_utok"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/option_utok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tok"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/option_obrana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obrana"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/option_zivoty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ivoty"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/potvrdit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:text="@string/potvrdi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

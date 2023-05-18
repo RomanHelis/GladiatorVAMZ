@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kasarne">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:textColor="#4F9171"
+            android:text="@string/gladi_tor" />
+        <TextView
+            android:id="@+id/text_meno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/meno_0" />
+        <TextView
+            android:id="@+id/text_utok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/utok_0" />
+        <TextView
+            android:id="@+id/text_obrana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/obrana_0" />
+        <TextView
+            android:id="@+id/text_zivoty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/zivoty_0" />
+        <TextView
+            android:id="@+id/text_peniaze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/peniaze_0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/kas_rne"
+            android:textColor="#4F9171"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/arena_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ar_na" />
+
+        <Button
+            android:id="@+id/obchod_so_zbranami_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/obchod_so_zbra_ami" />
+
+        <Button
+            android:id="@+id/obchod_s_brnenim_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/obchod_s_brnen_m" />
+
+        <Button
+            android:id="@+id/strazna_sluzba_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_na_slu_ba" />
+
+        <Button
+            android:id="@+id/body_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pou_i_sk_senostn_body" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

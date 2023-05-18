@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arena">
+
+    <ImageButton
+        android:id="@+id/super1_imageButton"
+        android:layout_width="136dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="@string/super_1_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/super1" />
+
+    <ImageButton
+        android:id="@+id/super3_imageButton"
+        android:layout_width="136dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="@string/super_2_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gladiator2" />
+
+    <ImageButton
+        android:id="@+id/super2_imageButton"
+        android:layout_width="136dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="@string/super_3_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gladiator1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/v_ber_s_pera"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="424dp"
+        android:text="@string/nasp_do_kas_rn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:text="@string/vyberte_si_jedn_ho_z_troch_s_perov_na_avej_strane_je_najlach_s_per_a_naopak_na_pravej_strane_je_naj_ach_s_pera_si_vyberiete_kliknut_m_jedn_ho_z_obr_zkov"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FF000000"
+        android:background="#FFEEEEEE"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

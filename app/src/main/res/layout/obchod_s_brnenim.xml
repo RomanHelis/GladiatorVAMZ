@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/armor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:textColor="#0F9D58"
+            android:text="@string/gladi_tor" />
+        <TextView
+            android:id="@+id/text_meno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/meno_0" />
+
+        <TextView
+            android:id="@+id/text_peniaze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/peniaze_0" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/brnenie"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_kozene_brenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ko_en_brnenie_prid_va_1_do_atrib_tu_obrana_cena_10_minc"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/text_ocelove_brenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ocelov_brnenie_prid_va_3_do_atrib_tu_obrana_cena_50_minc"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/text_titanove_brenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tit_nov_brnenie_prid_va_5_do_atrib_tu_obrana_cena_100_minc"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/brnenie_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="236dp"
+        android:checkedButton="@id/option_kozene_brenie"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/option_kozene_brenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ko_en_brnenie"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/option_ocelove_brenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ocelov_brnenie"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/option_titanove_brenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tit_nov_brnenie"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/kupit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/k_pi"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nasp_do_kas_rn"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="430dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
